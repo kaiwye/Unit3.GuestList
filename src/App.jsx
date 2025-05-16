@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import GuestList from "./GuestList";
 import GuestDetails from "./GuestDetails";
 
@@ -7,7 +7,7 @@ export default function App() {
   return (
     <>
       {guestId ? (
-        <GuestDetails setGuestId={setGuestId} />
+        <GuestDetails guestId={guestId} setGuestId={setGuestId} />
       ) : (
         <GuestList setGuestId={setGuestId} />
       )}

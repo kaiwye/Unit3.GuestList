@@ -8,8 +8,8 @@ export default function GuestList({ setGuestId }) {
 
   return (
     <>
-      <h1>Guest List</h1>
       <main>
+      <h1>Guest List</h1>
         <table>
           <thead>
             <tr>
@@ -28,7 +28,7 @@ export default function GuestList({ setGuestId }) {
             ))}
           </tbody>
         </table>
-        <p>Select a guest to see more details</p>
+        <h3>Select a guest above to see more details</h3>
       </main>
     </>
   );
